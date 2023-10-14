@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tugas Pertemuan 8</h1>
+        <h2>Form Registrasi</h2>
+        <form action="#" method="post">
+            <label for="nama"> Nama:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+            
+            <label for="tgl_lahir">Tanggal Lahir :</label>
+            <input type="text" id="tgl_lahir" name="tgl_lahir" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="dd/mm/yyyy" required><br><br>
+            
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea><br><br>
+            
+            <label for="kota">Kota:</label>
+            <input type="text" id="kota" name="kota" required><br><br>
+            
+            <label for="pekerjaan">Pekerjaan:</label>
+            <select id="pekerjaan" name="pekerjaan">
+                <option value="Tani">Tani</option>
+                <option value="PNS">PNS</option>
+                <option value="Polisi">Polisi</option>
+                <option value="Youtuber">Youtuber</option>
+                <option value="TNI">TNI</option>
+            </select><br><br>
+            
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki">
+            <label for="laki_laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+            <label for="perempuan">Perempuan</label><br><br>
+            
+            <label>Hobi:</label>
+            <input type="checkbox" id="reading" name="hobi[]" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sport" name="hobi[]" value="Sport">
+            <label for="sport">Sport</label>
+            <input type="checkbox" id="singing" name="hobi[]" value="Singing">
+            <label for="singing">Singing</label>
+            <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
+            <label for="traveling">Traveling</label><br><br>
+            
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Cancel">
+        </form>
+    </div>
+</body>
+</html>
